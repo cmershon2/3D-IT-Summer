@@ -14,6 +14,7 @@ public class slotManager : MonoBehaviour
     public GameObject FailUI;
 
     public GameObject Info;
+    public GameObject InfoParent;
 
     public bool collide = false;
     public bool rotate = false;
@@ -42,11 +43,13 @@ public class slotManager : MonoBehaviour
         if(WifiCardAnim.GetCurrentAnimatorStateInfo(0).IsName("idleR"))
         {
             CompleteUI.SetActive(true);
+            InfoParent.SetActive(false);
         }
 
         if (WifiCardAnim.GetCurrentAnimatorStateInfo(0).IsName("idleW"))
         {
             FailUI.SetActive(true);
+            InfoParent.SetActive(false);
         }
 
     }
