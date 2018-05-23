@@ -50,6 +50,11 @@ public class VideoManager : MonoBehaviour {
             Redical.SetActive(true);
             rend.material.color = ScreenColorDone;
         }
+
+        if (Screen.GetCurrentAnimatorStateInfo(0).IsName("eIdle"))
+        {
+            DestroyGameObject();
+        }
     }
 
     public void Replay()
@@ -78,5 +83,10 @@ public class VideoManager : MonoBehaviour {
         //MoboUI.SetActive(true);
         Redical.SetActive(true);
         VideoOver = true;
+    }
+
+    void DestroyGameObject()
+    {
+        Destroy(this.gameObject);
     }
 }
