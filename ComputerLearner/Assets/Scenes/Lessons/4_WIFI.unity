@@ -3181,6 +3181,7 @@ GameObject:
   - component: {fileID: 597382017}
   - component: {fileID: 597382016}
   - component: {fileID: 597382015}
+  - component: {fileID: 597382023}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3195,7 +3196,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 597382014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
   m_Name: 
@@ -3208,7 +3209,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 597382014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9191284b058eef549b7108b5f04e1117, type: 3}
   m_Name: 
@@ -3300,6 +3301,18 @@ Transform:
   m_Father: {fileID: 976623064}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &597382023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597382014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: afc28c29257273a45a1b93d971f01bf1, type: 2}
 --- !u!1 &597385362
 GameObject:
   m_ObjectHideFlags: 0
@@ -6202,6 +6215,7 @@ MonoBehaviour:
   CompleteUI: {fileID: 724035315}
   FailUI: {fileID: 1959478978}
   Info: {fileID: 361551780}
+  InfoParent: {fileID: 0}
   collide: 0
   rotate: 0
 --- !u!65 &1152495804

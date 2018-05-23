@@ -2867,12 +2867,12 @@ GameObject:
   - component: {fileID: 597382022}
   - component: {fileID: 752237743}
   - component: {fileID: 597382021}
-  - component: {fileID: 597382020}
   - component: {fileID: 597382019}
   - component: {fileID: 597382018}
   - component: {fileID: 597382017}
   - component: {fileID: 597382016}
   - component: {fileID: 597382015}
+  - component: {fileID: 597382020}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2961,14 +2961,18 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 597382014}
   m_Enabled: 1
---- !u!92 &597382020
-Behaviour:
+--- !u!114 &597382020
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 92931781617018444, guid: 40e7888e9b4865b4f83f325831d20e7a,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 597382014}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: afc28c29257273a45a1b93d971f01bf1, type: 2}
 --- !u!124 &597382021
 Behaviour:
   m_ObjectHideFlags: 0

@@ -2201,9 +2201,36 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 234.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114706003969442124, guid: 40e7888e9b4865b4f83f325831d20e7a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086160016633092, guid: 40e7888e9b4865b4f83f325831d20e7a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40e7888e9b4865b4f83f325831d20e7a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &690080204 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1321696729060098, guid: 40e7888e9b4865b4f83f325831d20e7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 690080203}
+--- !u!114 &690080205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690080204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: afc28c29257273a45a1b93d971f01bf1, type: 2}
 --- !u!1 &701543730 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1587500712225942, guid: 4069751c86c1dd24084300900e90f303,
