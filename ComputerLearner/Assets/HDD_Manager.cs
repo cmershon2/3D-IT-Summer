@@ -12,6 +12,7 @@ public class HDD_Manager : MonoBehaviour
     public GameObject FailedMenu;
     public GameObject mobo;
     public GameObject Stands;
+    public GameObject InfoObj;
     public Text Info;
     public bool Correct = false;
 
@@ -61,6 +62,11 @@ public class HDD_Manager : MonoBehaviour
             {
                 Info.text = "Move screwdriver to case";
             }
+        }
+
+        if(Stands.GetComponent<MoboManager>().complete == true)
+        {
+            Destroy(InfoObj);
         }
     }
 

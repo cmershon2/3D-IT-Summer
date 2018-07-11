@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour {
 
     public string Username;
+    public int Lesson;
     public bool Lesson1;
     public bool Lesson2;
     public bool Lesson3;

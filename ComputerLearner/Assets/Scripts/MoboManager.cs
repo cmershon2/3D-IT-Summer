@@ -15,13 +15,15 @@ public class MoboManager : MonoBehaviour {
     public GameObject DriverUI;
     public GameObject RotationUI;
     public GameObject FailUI;
+    public GameObject FinalUI;
 
     public bool rotate = false;
     public bool insert = false;
     public bool fin = false;
+    public bool complete;
 
-    private int screwID = 0;
-    private bool driverFin = false;
+    public int screwID = 0;
+    public bool driverFin = false;
 
 	// Use this for initialization
 	void Start ()
@@ -54,29 +56,31 @@ public class MoboManager : MonoBehaviour {
 
         if(driverFin == true)
         {
+            screwDriverInteractive.SetActive(false);
+
             screwDriverStatic[screwID].SetActive(true);
 
-            if (screwDriverStatic[screwID].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("finIdle"))
+            if(screwDriverStatic[screwID].GetComponent<ScrewCollider>().fin == true)
             {
-
+                DriverUI.SetActive(true);
+            }
+            else
+            {
+                DriverUI.SetActive(false);
             }
 
-            
-            for(int i = 0; i < screwDriverStatic.Length; i++)
-            {
-                if(screwDriverStatic[i].GetComponent<ScrewCollider>().fin == false)
-                {
-                    //return false
-                }
-                //return true
-
-            }
-            
         }
         
+        if(screwID > 4 || screwID == 4)
+        {
+            complete = true;
+            DriverUI.SetActive(false);
+            FinalUI.SetActive(true);
+        }
+
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.tag == "CPU")
         {
@@ -87,9 +91,7 @@ public class MoboManager : MonoBehaviour {
 
         if(collision.gameObject.tag == "driver")
         {
-            screwID++;
-            driverFin = true;
-            screwDriverInteractive.SetActive(false);
+            driverFin = true;         
         }
     }
 
@@ -105,6 +107,8 @@ public class MoboManager : MonoBehaviour {
 
     public void Next()
     {
+        screwDriverStatic[screwID].SetActive(false);
+
         screwID++;
     }
 }
