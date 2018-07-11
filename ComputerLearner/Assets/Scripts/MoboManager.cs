@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class MoboManager : MonoBehaviour {
 
-    public GameObject moboStatic;
     public GameObject moboAnimated;
     public GameObject mobo;
     public GameObject Screws;
@@ -53,10 +52,26 @@ public class MoboManager : MonoBehaviour {
             screwDriverInteractive.GetComponent<ObjectDrag>().enabled = true;
         }
 
-        for(int i = 0; i < screwDriverStatic.Length; i++)
+        if(driverFin == true)
         {
+            screwDriverStatic[screwID].SetActive(true);
 
+            if (screwDriverStatic[screwID].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("finIdle"))
+            {
+
+            }
+
+            /*
+            for(int i = 0; i < screwDriverStatic.Length; i++)
+            {
+                if(screwDriverStatic[i].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("right"))
+                {
+
+                }
+            }
+            */
         }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
