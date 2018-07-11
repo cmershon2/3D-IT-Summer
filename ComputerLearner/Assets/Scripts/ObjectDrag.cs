@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectDrag : MonoBehaviour {
+public class ObjectDrag : MonoBehaviour
+{
 
     public float distance = 10;
 
@@ -11,17 +12,17 @@ public class ObjectDrag : MonoBehaviour {
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        if(Redicle == null)
+        if (Redicle == null)
         {
             Redicle = GameObject.Find("GvrReticlePointer");
         }
 
-        if(hold == true)
+        if (hold == true)
         {
             Ray ray = new Ray(Redicle.transform.position, Redicle.transform.forward);
             transform.position = ray.GetPoint(distance);
@@ -38,5 +39,10 @@ public class ObjectDrag : MonoBehaviour {
     public void OnRelease()
     {
         hold = false;
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        hold = false;
+
     }
 }

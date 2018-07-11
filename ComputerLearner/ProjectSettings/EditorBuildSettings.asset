@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lessons/4_WIFI.unity
     guid: c341cb19e9e10304b975284a6423f5f9
+  - enabled: 1
+    path: Assets/Scenes/Lessons/5_GPU.unity
+    guid: bb37e60afab16b042aef5195d0ef3505
+  - enabled: 1
+    path: Assets/Scenes/Lessons/6_Case.unity
+    guid: f5f1195b4d4707b41b5a6a6feb7f2f6e
   m_configObjects: {}
