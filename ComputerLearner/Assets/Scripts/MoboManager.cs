@@ -61,15 +61,17 @@ public class MoboManager : MonoBehaviour {
 
             }
 
-            /*
+            
             for(int i = 0; i < screwDriverStatic.Length; i++)
             {
-                if(screwDriverStatic[i].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("right"))
+                if(screwDriverStatic[i].GetComponent<ScrewCollider>().fin == false)
                 {
-
+                    //return false
                 }
+                //return true
+
             }
-            */
+            
         }
         
     }
