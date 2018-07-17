@@ -7,11 +7,11 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour {
 
     public string Username;
-<<<<<<< HEAD
+//<<<<<<< HEAD
     public int LessonNum;
-=======
+//=======
     public int Lesson;
->>>>>>> b3ca7cc11bf62e25d51098abd5168c32ddeda4ff
+//>>>>>>> b3ca7cc11bf62e25d51098abd5168c32ddeda4ff
     public bool Lesson1;
     public bool Lesson2;
     public bool Lesson3;
