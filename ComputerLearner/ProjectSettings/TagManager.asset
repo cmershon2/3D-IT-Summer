@@ -8,6 +8,9 @@ TagManager:
   - coolant
   - heatSink
   - clamp
+  - floor
+  - driver
+  - hdd
   layers:
   - Default
   - TransparentFX
