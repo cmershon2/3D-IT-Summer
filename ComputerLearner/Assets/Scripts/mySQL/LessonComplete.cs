@@ -5,12 +5,10 @@ using UnityEngine.UI;
 
 public class LessonComplete : MonoBehaviour {
 
-    public string newLessonNum;
     public GameObject PlayerData;
-    private int newLessonData;
     public bool UpdateLessonData = false;
 
-    string LessonCompURL = "http://3dit.mygamesonline.org/LessonComp.php";
+    string LessonCompURL = "it3d.science/Complete.php";
 
     // Use this for initialization
     void Start () {
@@ -26,30 +24,99 @@ public class LessonComplete : MonoBehaviour {
         {
             PlayerData = GameObject.Find("PlayerData");
         }
+        
+        
 
-        int.TryParse(newLessonNum, out newLessonData);
-
-        if (PlayerData.GetComponent<PlayerData>().Lesson < newLessonData)
-        {
+        //int.TryParse(newLessonNum, out newLessonData);
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 1 && !PlayerData.GetComponent<PlayerData>().Lesson1) {
             UpdateLessonData = true;
         }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 2 && !PlayerData.GetComponent<PlayerData>().Lesson2) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 3 && !PlayerData.GetComponent<PlayerData>().Lesson3) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 4 && !PlayerData.GetComponent<PlayerData>().Lesson4) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 5 && !PlayerData.GetComponent<PlayerData>().Lesson5) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 6 && !PlayerData.GetComponent<PlayerData>().Lesson6) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 7 && !PlayerData.GetComponent<PlayerData>().Lesson7) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 8 && !PlayerData.GetComponent<PlayerData>().Lesson8) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 9 && !PlayerData.GetComponent<PlayerData>().Lesson9) {
+            UpdateLessonData = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 10 && !PlayerData.GetComponent<PlayerData>().Lesson10) {
+            UpdateLessonData = true;
+        }
+    
+        
+        
 	}
 
     public void SetLessonData(string username, int LessonNum)
     {
+    
+        Debug.Log("Setting LESSON DATA.");
         WWWForm form = new WWWForm();
-        form.AddField("usernamePost", username);
+        form.AddField("username", username);
         form.AddField("newLesson", LessonNum);
 
         WWW lessonData = new WWW(LessonCompURL, form);
+        
+        while(!lessonData.isDone) {
+            continue;
+        }
+        
+        Debug.Log(lessonData.text);
     }
 
     public void OnClick()
     {
+    
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 1) {
+            PlayerData.GetComponent<PlayerData>().Lesson1 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 2) {
+            PlayerData.GetComponent<PlayerData>().Lesson2 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 3) {
+            PlayerData.GetComponent<PlayerData>().Lesson3 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 4) {
+            PlayerData.GetComponent<PlayerData>().Lesson4 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 5) {
+            PlayerData.GetComponent<PlayerData>().Lesson5 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 6) {
+            PlayerData.GetComponent<PlayerData>().Lesson6 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 7) {
+            PlayerData.GetComponent<PlayerData>().Lesson7 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 8) {
+            PlayerData.GetComponent<PlayerData>().Lesson8 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 9) {
+            PlayerData.GetComponent<PlayerData>().Lesson9 = true;
+        }
+        if(PlayerData.GetComponent<PlayerData>().LessonNum == 10) {
+            PlayerData.GetComponent<PlayerData>().Lesson10 = true;
+        }
+
         if(UpdateLessonData == true)
         {
-            SetLessonData(PlayerData.GetComponent<PlayerData>().Username, newLessonData);
-            PlayerData.GetComponent<PlayerData>().Lesson = newLessonData;
+            SetLessonData(PlayerData.GetComponent<PlayerData>().Username, PlayerData.GetComponent<PlayerData>().LessonNum);
         }
     }
 }

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class UserManager : MonoBehaviour {
     public GameObject playerData;
     public int LessonComp;
-
+    public string username;
+    
     public Color CompleteColor;
     public Color AssignedColor;
 
@@ -34,10 +35,19 @@ public class UserManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        LessonComp = playerData.GetComponent<PlayerData>().Lesson;
+        bool Lesson1 = playerData.GetComponent<PlayerData>().Lesson1;
+        bool Lesson2 = playerData.GetComponent<PlayerData>().Lesson2;
+        bool Lesson3 = playerData.GetComponent<PlayerData>().Lesson3;
+        bool Lesson4 = playerData.GetComponent<PlayerData>().Lesson4;
+        bool Lesson5 = playerData.GetComponent<PlayerData>().Lesson5;
+        bool Lesson6 = playerData.GetComponent<PlayerData>().Lesson6;
+        bool Lesson7 = playerData.GetComponent<PlayerData>().Lesson7;
+        bool Lesson8 = playerData.GetComponent<PlayerData>().Lesson8;
+        bool Lesson9 = playerData.GetComponent<PlayerData>().Lesson9;
+        bool Lesson10 = playerData.GetComponent<PlayerData>().Lesson10;
 
 #region ColorIfs
-        if (LessonComp >= 1)
+        if (Lesson1)
         {
             L1.GetComponent<Image>().color = CompleteColor;
         }
@@ -46,7 +56,7 @@ public class UserManager : MonoBehaviour {
             L1.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 2)
+        if (Lesson2)
         {
             L2.GetComponent<Image>().color = CompleteColor;
         }
@@ -55,7 +65,7 @@ public class UserManager : MonoBehaviour {
             L2.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 3)
+        if (Lesson3)
         {
             L3.GetComponent<Image>().color = CompleteColor;
         }
@@ -64,16 +74,17 @@ public class UserManager : MonoBehaviour {
             L3.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 4)
+        if (Lesson4)
         {
             L4.GetComponent<Image>().color = CompleteColor;
         }
         else
         {
             L4.GetComponent<Image>().color = AssignedColor;
+            
         }
 
-        if (LessonComp >= 5)
+        if (Lesson5)
         {
             L5.GetComponent<Image>().color = CompleteColor;
         }
@@ -82,7 +93,7 @@ public class UserManager : MonoBehaviour {
             L5.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 6)
+        if (Lesson6)
         {
             L6.GetComponent<Image>().color = CompleteColor;
         }
@@ -91,7 +102,7 @@ public class UserManager : MonoBehaviour {
             L6.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 7)
+        if (Lesson7)
         {
             L7.GetComponent<Image>().color = CompleteColor;
         }
@@ -100,7 +111,7 @@ public class UserManager : MonoBehaviour {
             L7.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 8)
+        if (Lesson8)
         {
             L8.GetComponent<Image>().color = CompleteColor;
         }
@@ -109,7 +120,7 @@ public class UserManager : MonoBehaviour {
             L8.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 9)
+        if (Lesson9)
         {
             L9.GetComponent<Image>().color = CompleteColor;
         }
@@ -118,7 +129,7 @@ public class UserManager : MonoBehaviour {
             L9.GetComponent<Image>().color = AssignedColor;
         }
 
-        if (LessonComp >= 10)
+        if (Lesson10)
         {
             L10.GetComponent<Image>().color = CompleteColor;
         }
@@ -133,6 +144,15 @@ public class UserManager : MonoBehaviour {
 
     public void LogoutClick()
     {
+        
+        username = playerData.GetComponent<PlayerData>().Username;
+        
+        WWWForm form = new WWWForm();
+        form.AddField("username", username);
+        WWW lessonData = new WWW("it3d.science/UnityLogout.php", form);
+        
         Destroy(playerData);
+        
+        
     }
 }
