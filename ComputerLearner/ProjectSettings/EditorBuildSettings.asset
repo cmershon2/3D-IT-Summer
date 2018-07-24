@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: 047fd36e927b73b46807bcf0301393be
   - enabled: 1
@@ -26,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lessons/5_GPU.unity
     guid: bb37e60afab16b042aef5195d0ef3505
-  - enabled: 1
-    path: Assets/Scenes/Lessons/6_Case.unity
-    guid: f5f1195b4d4707b41b5a6a6feb7f2f6e
   m_configObjects: {}

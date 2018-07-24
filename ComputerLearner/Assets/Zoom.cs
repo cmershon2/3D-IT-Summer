@@ -8,8 +8,10 @@ public class Zoom : MonoBehaviour {
     public GameObject Document;
     public GameObject MainOrigin;
     public GameObject CaseCam;
-    public GameObject USB3;
+    public GameObject CaseCamPSU;
+    public GameObject exitZoom;
     public bool zoomBool;
+    public bool psuBool;
 
 	// Use this for initialization
 	void Start () {
@@ -21,11 +23,22 @@ public class Zoom : MonoBehaviour {
     {
 		if(zoomBool == true)
         {
-            Player.transform.position = CaseCam.transform.position;
-            Document.SetActive(false);
+            exitZoom.SetActive(true);
+            if (psuBool == true)
+            {
+                Player.transform.position = CaseCamPSU.transform.position;
+                
+                Document.SetActive(false);
+            }
+            else
+            {
+                Player.transform.position = CaseCam.transform.position;
+                Document.SetActive(false);
+            }
         }
         else if(zoomBool == false)
         {
+            exitZoom.SetActive(false);
             Player.transform.position = MainOrigin.transform.position;
             Document.SetActive(true);
         }

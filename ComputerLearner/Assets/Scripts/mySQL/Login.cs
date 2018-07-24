@@ -16,6 +16,9 @@ public class Login : MonoBehaviour {
     public bool infoFetched = false;
     public bool fetching = false;
 
+    public GameObject LoadingIcon;
+    public GameObject LoginBtn;
+
     string LoginURL = "it3d.science/UnityLogin.php";
 
 	
@@ -54,12 +57,18 @@ public class Login : MonoBehaviour {
         {
             LoginError.text = "Incorrect password";
             StartCoroutine(ErrorFade(1.0f));
+
+            LoginBtn.SetActive(true);
+            LoadingIcon.SetActive(false);
         }
 
         if(www.text == "user not found")
         {
             LoginError.text = "Username not found";
             StartCoroutine(ErrorFade(1.0f));
+
+            LoginBtn.SetActive(true);
+            LoadingIcon.SetActive(false);
         }
 
         if(www.text == "Login Success")
@@ -231,6 +240,8 @@ public class Login : MonoBehaviour {
     public void OnClick()
     {
         StartCoroutine(LoginToDB(UsernameUI.text, PasswordUI.text));
+        LoginBtn.SetActive(false);
+        LoadingIcon.SetActive(true);
     }
 #endregion
 

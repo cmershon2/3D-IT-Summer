@@ -7,7 +7,6 @@ public class hold : MonoBehaviour {
 
     public GameObject Drag;
     public GameObject Cable;
-    public GameObject Zoom;
 
     // Use this for initialization
     void Start()
