@@ -2766,7 +2766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &822066718
 Transform:
   m_ObjectHideFlags: 0
@@ -3474,7 +3474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036032143
 Transform:
   m_ObjectHideFlags: 0
@@ -3482,8 +3482,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1036032142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -493.63446}
-  m_LocalScale: {x: 4.9363446, y: 4.9363446, z: 4.9363446}
+  m_LocalPosition: {x: -0, y: 0, z: -493.63443}
+  m_LocalScale: {x: 4.936344, y: 4.936344, z: 4.936344}
   m_Children:
   - {fileID: 409637377}
   - {fileID: 2061610873}
@@ -7447,7 +7447,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  supportHDRTextures: 1
+  isSupported: 1
   shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
+  mat: {fileID: 0}
 --- !u!1 &1973973470
 GameObject:
   m_ObjectHideFlags: 0
@@ -8368,26 +8371,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1359678947}
-        m_MethodName: SetStyle
-        m_Mode: 5
+      - m_Target: {fileID: 2101149681}
+        m_MethodName: loadScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stock_Style
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1359678948}
-        m_MethodName: ChangeToScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 1_CPUinstallation
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
