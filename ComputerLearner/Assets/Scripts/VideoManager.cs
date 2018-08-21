@@ -17,6 +17,7 @@ public class VideoManager : MonoBehaviour {
     public Animator Screen;
     public bool VideoOver = false;
     public bool cont = false;
+    public bool loading = true;
 
 
     void Start()
@@ -25,30 +26,40 @@ public class VideoManager : MonoBehaviour {
         MoboUI.SetActive(false);
         Redical.SetActive(false);
         ScreenCanvas.SetActive(false);
-
+        StartCoroutine(Buffering());
         vid.loopPointReached += CheckOver;
     }
 
     private void Update()
-    {
-        if(VideoOver == true)
+    {      
+        if(loading == false)
         {
-            VideoPlayer.SetActive(false);
-            ScreenCanvas.SetActive(true);
-            rend.material.color = ScreenColorDone;
-
-            if(cont == true)
+            
+            if (VideoOver == true)
             {
-                ScreenCanvas.SetActive(false);
-            }
-        }
+                VideoPlayer.SetActive(false);
+                ScreenCanvas.SetActive(true);
+                rend.material.color = ScreenColorDone;
 
-        if(vid.isPlaying == false)
-        {
-            VideoPlayer.SetActive(false);
-            ScreenCanvas.SetActive(true);
-            Redical.SetActive(true);
-            rend.material.color = ScreenColorDone;
+                if (cont == true)
+                {
+                    ScreenCanvas.SetActive(false);
+                }
+            }
+
+            if (vid.isPlaying == false)
+            {
+                VideoPlayer.SetActive(false);
+                ScreenCanvas.SetActive(true);
+                Redical.SetActive(true);
+                rend.material.color = ScreenColorDone;
+            }
+
+            if(vid.isPlaying == false && VideoOver == true)
+            {
+                loading = true;
+            }
+            
         }
 
         if (Screen.GetCurrentAnimatorStateInfo(0).IsName("eIdle"))
@@ -59,6 +70,7 @@ public class VideoManager : MonoBehaviour {
 
     public void Replay()
     {
+        StartCoroutine(Buffering());
         rend.material.color = ScreenColorBegin;
         VideoPlayer.SetActive(true);
         ScreenCanvas.SetActive(false);
@@ -74,6 +86,12 @@ public class VideoManager : MonoBehaviour {
         MoboUI.SetActive(true);
         Redical.SetActive(true);
         cont = true;
+    }
+
+    IEnumerator Buffering()
+    {
+        yield return new WaitForSeconds(10);
+        loading = false;
     }
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)

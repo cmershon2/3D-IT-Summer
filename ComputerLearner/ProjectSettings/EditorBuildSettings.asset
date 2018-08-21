@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2fe1cd561505187438b4995ec8dbad63
   - enabled: 1
+    path: Assets/Scenes/Lessons/Tutorial.unity
+    guid: 379a643d2df1efa49af73d39258eb059
+  - enabled: 1
     path: Assets/Scenes/Lessons/1_CPUinstallation.unity
     guid: f4e5f533cf3595e45bb4ab8c37a9b4ab
   - enabled: 1

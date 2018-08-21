@@ -29,7 +29,7 @@ public class sataPower : MonoBehaviour {
         this.GetComponent<Animator>().SetBool("rotate", rotate);
         this.GetComponent<Animator>().SetBool("insert", insert);
 
-        if (this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("6pin_r"))
+        if (this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("sata_r"))
         {
             NexTrigger.SetActive(true);
             FinCable.SetActive(true);
@@ -41,7 +41,7 @@ public class sataPower : MonoBehaviour {
 
         }
 
-        if (this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("6pin_w"))
+        if (this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("sata_w"))
         {
             Destroy(menu);
             FailMenu.SetActive(true);

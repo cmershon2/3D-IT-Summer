@@ -7097,13 +7097,13 @@ VideoPlayer:
   - {fileID: 1237933281}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://r2---sn-p4o-poql.googlevideo.com/videoplayback?initcwndbps=1788750&id=o-AAWFpeGISgbCSXMG7tQW_-L1bjBlMVLihCIhxYRO73HQ&pl=22&dur=6.757&fvip=5&mime=video%2Fmp4&ms=au%2Crdu&signature=0CA3FF74F59D21AEFF26892E9C5BA16687827BD9.34E19123B6A0394C0588EF4502529554B56E8F0D&source=youtube&mv=m&mm=31%2C29&ipbits=0&requiressl=yes&mt=1533060593&itag=22&mn=sn-p4o-poql%2Csn-vgqsrne6&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&ratebypass=yes&expire=1533082315&lmt=1533060667585685&ei=a6ZgW9q2EOfOjAT5kIXABw&key=yt6&c=WEB&ip=75.103.173.20
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!1 &952455283
@@ -9874,6 +9874,7 @@ MonoBehaviour:
   Screen: {fileID: 1237933283}
   VideoOver: 0
   cont: 0
+  loading: 1
 --- !u!95 &1237933283
 Animator:
   serializedVersion: 3
@@ -15277,7 +15278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fb2f5dc577cf24aa043dfdfbd4a828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLessonNum: 6
   PlayerData: {fileID: 0}
   UpdateLessonData: 0
 --- !u!1 &1927479169

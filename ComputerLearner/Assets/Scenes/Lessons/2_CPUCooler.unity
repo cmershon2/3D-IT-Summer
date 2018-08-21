@@ -407,7 +407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
 --- !u!114 &121811258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2990,18 +2989,20 @@ VideoPlayer:
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 3
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: https://cf-e2.streamablevideo.com/video/mp4/avmos.mp4?token=1523562991-2GsFpzgIi3qKUFrn1Gen%2BN%2FBMeGsCzMVESrQIqj6w3Y%3D
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_TargetAudioSources:
+  - {fileID: 1237933281}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: http://isudeltasig.com/videos/amdCoolant.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!1 &970846440 stripped
@@ -3592,6 +3593,7 @@ MonoBehaviour:
   Screen: {fileID: 1237933283}
   VideoOver: 0
   cont: 0
+  loading: 1
 --- !u!95 &1237933283
 Animator:
   serializedVersion: 3
@@ -4982,7 +4984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fb2f5dc577cf24aa043dfdfbd4a828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLessonNum: 2
   PlayerData: {fileID: 0}
   UpdateLessonData: 0
 --- !u!114 &1923669888
