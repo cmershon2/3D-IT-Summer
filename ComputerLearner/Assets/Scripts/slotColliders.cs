@@ -7,6 +7,7 @@ public class slotColliders : MonoBehaviour {
     public bool insert = false;
     public bool right = false;
     public GameObject submit;
+    public GameObject INFO;
     public GameObject pass;
     public GameObject fail;
 
@@ -63,7 +64,7 @@ public class slotColliders : MonoBehaviour {
         }
     }
 
-    private void OnCollisionEnter(Collision col)
+    private void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.name == "RAM0")
         {
@@ -137,6 +138,8 @@ public class slotColliders : MonoBehaviour {
     public void Submit()
     {
         submit.SetActive(false);
+        Destroy(submit);
+        Destroy(INFO);
 
         if(AllRamRight() == true)
         {

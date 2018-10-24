@@ -177,9 +177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &18121024
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2289,9 +2286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &374903685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3526,9 +3520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &473801472
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5074,8 +5065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c173f7c6a736fe469d4acc5b108d6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joint: 0
-  debugDrawTo: {fileID: 0}
 --- !u!1 &785641296
 GameObject:
   m_ObjectHideFlags: 0
@@ -6274,7 +6263,7 @@ VideoPlayer:
   - {fileID: 1237933281}
   m_DirectAudioVolumes:
   - 1
-  m_Url: http://isudeltasig.com/videos/rAm.mp4
+  m_Url: http://it3d.science/videos/rAm(240).mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -7522,9 +7511,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &1130469152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7839,6 +7825,7 @@ MonoBehaviour:
   insert: 0
   right: 0
   submit: {fileID: 145180935}
+  INFO: {fileID: 1720914749}
   pass: {fileID: 724035315}
   fail: {fileID: 1959478978}
   anim:
@@ -8659,9 +8646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66baa93a294455a4bbc75c4789678a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAlpha: 1
-  touchTransparent: {fileID: 0}
-  touchOpaque: {fileID: 0}
 --- !u!23 &1299910971
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9402,14 +9386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214420881d1dd0428d32f7bdc5fde31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAlpha: 1
-  matUnknown: {fileID: 0}
-  matCharging: {fileID: 0}
-  matFull: {fileID: 0}
-  matAlmostFull: {fileID: 0}
-  matMedium: {fileID: 0}
-  matLow: {fileID: 0}
-  matCriticalLow: {fileID: 0}
 --- !u!23 &1442005648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9961,11 +9937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa952cbcc0eb13d4ca558b6da550ff55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAlpha: 1
-  material_idle: {fileID: 0}
-  material_app: {fileID: 0}
-  material_system: {fileID: 0}
-  material_touchpad: {fileID: 0}
 --- !u!23 &1558216283
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11568,11 +11539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b65678ccdd949e9a58874d2880c0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserColor: {r: 1, g: 1, b: 1, a: 0.25}
-  maxLaserDistance: 0.75
-  maxReticleDistance: 2.5
-  reticle: {fileID: 0}
-  reticleSortingOrder: 32767
 --- !u!114 &1863235380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11585,8 +11551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c173f7c6a736fe469d4acc5b108d6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joint: 0
-  debugDrawTo: {fileID: 0}
 --- !u!1001 &1875208519
 Prefab:
   m_ObjectHideFlags: 0

@@ -34,7 +34,7 @@ public class CPU_Lock : MonoBehaviour {
             CPU1.SetActive(true);
             CPU0.SetActive(false);
             InsertButton.SetActive(true);
-            instruction.text = "Rotate chip to align colored corners";
+            instruction.text = "Click CPU to rotate chip to align colored corners.";
             GetComponent<Collider>().enabled = false;
             Lever.GetComponent<zeroForce>().open = false;
         }
