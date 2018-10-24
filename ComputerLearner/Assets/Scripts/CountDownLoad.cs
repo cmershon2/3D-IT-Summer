@@ -14,7 +14,11 @@ public class CountDownLoad : MonoBehaviour {
 
     void Awake()
     {
-
+        if (PlayerData == null)
+        {
+            Debug.Log("No PlayerData... Attempting to find");
+            PlayerData = GameObject.Find("PlayerData");
+        }
     }
 
 
