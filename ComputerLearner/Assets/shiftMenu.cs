@@ -59,4 +59,10 @@ public class shiftMenu : MonoBehaviour {
         shiftNum++;
         menuAnim.SetInteger("shift", shiftNum);
     }
+
+	public void Reset()
+	{
+        shiftNum = 0;
+        menuAnim.SetInteger("shift", shiftNum);
+	}
 }

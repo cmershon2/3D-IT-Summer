@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222332750246295876}
   - component: {fileID: 114802863313063762}
   - component: {fileID: 114960853020821022}
+  - component: {fileID: 65111164347020286}
   m_Layer: 5
   m_Name: menuButt
   m_TagString: Untagged
@@ -110,6 +111,7 @@ GameObject:
   - component: {fileID: 114841157665123598}
   - component: {fileID: 114598645939299284}
   - component: {fileID: 114322754472402772}
+  - component: {fileID: 65662589137793676}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -129,6 +131,7 @@ GameObject:
   - component: {fileID: 114538775285285664}
   - component: {fileID: 114227235312119592}
   - component: {fileID: 114434898736149880}
+  - component: {fileID: 65829181612222192}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -181,6 +184,7 @@ GameObject:
   - component: {fileID: 222271976902859382}
   - component: {fileID: 114888744089011164}
   - component: {fileID: 114959674553806810}
+  - component: {fileID: 65792362235455916}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -188,6 +192,54 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &65111164347020286
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1197290657314902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65662589137793676
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478134412317992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 160, y: 30, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65792362235455916
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891186153225564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40, y: 40, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65829181612222192
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512306737348808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 160, y: 30, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114227235312119592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -319,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6a03579c36f2a429b82630e2163ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 1_CPUinstallation
+  LevelToLoad: Tutorial
   PlayerData: {fileID: 0}
 --- !u!114 &114344628981218176
 MonoBehaviour:
