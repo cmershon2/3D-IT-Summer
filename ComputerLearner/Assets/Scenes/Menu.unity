@@ -703,6 +703,7 @@ GameObject:
   - component: {fileID: 275555918}
   - component: {fileID: 275555917}
   - component: {fileID: 275555916}
+  - component: {fileID: 275555919}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -825,6 +826,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275555914}
+--- !u!65 &275555919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275555914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &284067252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1160,7 @@ GameObject:
   - component: {fileID: 360361918}
   - component: {fileID: 360361917}
   - component: {fileID: 360361916}
+  - component: {fileID: 360361919}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1280,6 +1294,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 360361914}
+--- !u!65 &360361919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360361914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &387807908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1317,7 @@ GameObject:
   - component: {fileID: 387807912}
   - component: {fileID: 387807911}
   - component: {fileID: 387807910}
+  - component: {fileID: 387807913}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1424,6 +1451,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 387807908}
+--- !u!65 &387807913
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 387807908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &409637376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1616,7 @@ GameObject:
   - component: {fileID: 451645832}
   - component: {fileID: 451645831}
   - component: {fileID: 451645830}
+  - component: {fileID: 451645833}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1710,6 +1750,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451645828}
+--- !u!65 &451645833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451645828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &480605255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1774,7 @@ GameObject:
   - component: {fileID: 480605258}
   - component: {fileID: 480605257}
   - component: {fileID: 480605260}
+  - component: {fileID: 480605261}
   m_Layer: 5
   m_Name: 5_Install_GPU
   m_TagString: Untagged
@@ -1868,6 +1921,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 5
+--- !u!65 &480605261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 480605255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &486725964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2195,7 @@ GameObject:
   - component: {fileID: 572864502}
   - component: {fileID: 572864501}
   - component: {fileID: 572864500}
+  - component: {fileID: 572864504}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -2254,6 +2320,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 572864498}
+--- !u!65 &572864504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572864498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &573719942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +2634,7 @@ GameObject:
   - component: {fileID: 618039409}
   - component: {fileID: 618039408}
   - component: {fileID: 618039407}
+  - component: {fileID: 618039411}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -2680,6 +2759,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 618039405}
+--- !u!65 &618039411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 618039405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &647240760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3159,7 @@ GameObject:
   - component: {fileID: 778174270}
   - component: {fileID: 778174269}
   - component: {fileID: 778174268}
+  - component: {fileID: 778174271}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -3190,6 +3282,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 778174266}
+--- !u!65 &778174271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778174266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 385.3, y: 303, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &821646052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3382,6 +3486,7 @@ GameObject:
   - component: {fileID: 829617637}
   - component: {fileID: 829617636}
   - component: {fileID: 829617635}
+  - component: {fileID: 829617639}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -3506,6 +3611,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 829617633}
+--- !u!65 &829617639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829617633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &872541939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,6 +3804,7 @@ GameObject:
   - component: {fileID: 905243417}
   - component: {fileID: 905243416}
   - component: {fileID: 905243418}
+  - component: {fileID: 905243419}
   m_Layer: 5
   m_Name: LessonArrowR
   m_TagString: Untagged
@@ -3797,6 +3915,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &905243419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 905243414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60, y: 80, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &907115879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,6 +3971,7 @@ GameObject:
   - component: {fileID: 945893701}
   - component: {fileID: 945893700}
   - component: {fileID: 945893703}
+  - component: {fileID: 945893704}
   m_Layer: 5
   m_Name: 4_InstallNetwork
   m_TagString: Untagged
@@ -3987,6 +4118,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 4
+--- !u!65 &945893704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945893698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &958581376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,6 +4585,7 @@ GameObject:
   - component: {fileID: 1072331153}
   - component: {fileID: 1072331152}
   - component: {fileID: 1072331151}
+  - component: {fileID: 1072331154}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -4575,6 +4719,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072331149}
+--- !u!65 &1072331154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072331149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1079459326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4746,6 +4902,7 @@ GameObject:
   - component: {fileID: 1106795360}
   - component: {fileID: 1106795359}
   - component: {fileID: 1106795362}
+  - component: {fileID: 1106795363}
   m_Layer: 5
   m_Name: 2_CPU_Cooler
   m_TagString: Untagged
@@ -4892,6 +5049,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 2
+--- !u!65 &1106795363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106795357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1111035201
 Prefab:
   m_ObjectHideFlags: 0
@@ -5094,6 +5263,7 @@ GameObject:
   - component: {fileID: 1211503785}
   - component: {fileID: 1211503784}
   - component: {fileID: 1211503787}
+  - component: {fileID: 1211503788}
   m_Layer: 5
   m_Name: 10_FinalTest
   m_TagString: Untagged
@@ -5240,6 +5410,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 10
+--- !u!65 &1211503788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211503782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1211910693
 GameObject:
   m_ObjectHideFlags: 0
@@ -5252,6 +5434,7 @@ GameObject:
   - component: {fileID: 1211910697}
   - component: {fileID: 1211910696}
   - component: {fileID: 1211910695}
+  - component: {fileID: 1211910699}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -5376,6 +5559,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1211910693}
+--- !u!65 &1211910699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211910693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1232049687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5388,6 +5583,7 @@ GameObject:
   - component: {fileID: 1232049690}
   - component: {fileID: 1232049689}
   - component: {fileID: 1232049692}
+  - component: {fileID: 1232049693}
   m_Layer: 5
   m_Name: 6_Case_Installation
   m_TagString: Untagged
@@ -5534,6 +5730,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 6
+--- !u!65 &1232049693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1232049687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1237123981
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,6 +6226,7 @@ GameObject:
   - component: {fileID: 1346055506}
   - component: {fileID: 1346055505}
   - component: {fileID: 1346055507}
+  - component: {fileID: 1346055508}
   m_Layer: 5
   m_Name: LessonArrowL
   m_TagString: Untagged
@@ -6128,6 +6337,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &1346055508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346055503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60, y: 80, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1347605555
 GameObject:
   m_ObjectHideFlags: 0
@@ -6140,6 +6361,7 @@ GameObject:
   - component: {fileID: 1347605558}
   - component: {fileID: 1347605557}
   - component: {fileID: 1347605560}
+  - component: {fileID: 1347605561}
   m_Layer: 5
   m_Name: 9_Connection
   m_TagString: Untagged
@@ -6264,6 +6486,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 9
+--- !u!65 &1347605561
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347605555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1359678946
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,6 +6603,7 @@ GameObject:
   - component: {fileID: 1397035483}
   - component: {fileID: 1397035482}
   - component: {fileID: 1397035481}
+  - component: {fileID: 1397035484}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -6502,6 +6737,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1397035479}
+--- !u!65 &1397035484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397035479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1444341360
 GameObject:
   m_ObjectHideFlags: 0
@@ -7017,6 +7264,7 @@ GameObject:
   - component: {fileID: 1688150467}
   - component: {fileID: 1688150466}
   - component: {fileID: 1688150465}
+  - component: {fileID: 1688150468}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -7150,6 +7398,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688150463}
+--- !u!65 &1688150468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688150463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1695755836
 GameObject:
   m_ObjectHideFlags: 0
@@ -7246,6 +7506,7 @@ GameObject:
   - component: {fileID: 1738821920}
   - component: {fileID: 1738821919}
   - component: {fileID: 1738821922}
+  - component: {fileID: 1738821923}
   m_Layer: 5
   m_Name: 1_CPU
   m_TagString: Untagged
@@ -7392,6 +7653,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 1
+--- !u!65 &1738821923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738821917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1742627798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7404,6 +7677,7 @@ GameObject:
   - component: {fileID: 1742627802}
   - component: {fileID: 1742627801}
   - component: {fileID: 1742627800}
+  - component: {fileID: 1742627804}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -7528,6 +7802,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1742627798}
+--- !u!65 &1742627804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742627798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1743506643
 GameObject:
   m_ObjectHideFlags: 0
@@ -7540,6 +7826,7 @@ GameObject:
   - component: {fileID: 1743506646}
   - component: {fileID: 1743506645}
   - component: {fileID: 1743506648}
+  - component: {fileID: 1743506649}
   m_Layer: 5
   m_Name: 8_FinalizeBuild
   m_TagString: Untagged
@@ -7664,6 +7951,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 8
+--- !u!65 &1743506649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743506643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1753022409
 GameObject:
   m_ObjectHideFlags: 0
@@ -8103,6 +8402,7 @@ GameObject:
   - component: {fileID: 1879692302}
   - component: {fileID: 1879692301}
   - component: {fileID: 1879692304}
+  - component: {fileID: 1879692305}
   m_Layer: 5
   m_Name: 7_PowerSupply
   m_TagString: Untagged
@@ -8249,6 +8549,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 7
+--- !u!65 &1879692305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879692299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1900545488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8260,6 +8572,7 @@ GameObject:
   - component: {fileID: 1900545492}
   - component: {fileID: 1900545491}
   - component: {fileID: 1900545490}
+  - component: {fileID: 1900545493}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -8382,6 +8695,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900545488}
+--- !u!65 &1900545493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900545488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 188.61, y: 80, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1925684204
 GameObject:
   m_ObjectHideFlags: 0
@@ -8553,6 +8878,7 @@ GameObject:
   - component: {fileID: 1973973473}
   - component: {fileID: 1973973472}
   - component: {fileID: 1973973475}
+  - component: {fileID: 1973973476}
   m_Layer: 5
   m_Name: 3_Ram
   m_TagString: Untagged
@@ -8699,6 +9025,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 0}
   lesson: 3
+--- !u!65 &1973973476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973973470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 373.3, y: 97.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1976091982
 GameObject:
   m_ObjectHideFlags: 0
@@ -8958,6 +9296,7 @@ GameObject:
   - component: {fileID: 2061610876}
   - component: {fileID: 2061610875}
   - component: {fileID: 2061610874}
+  - component: {fileID: 2061610877}
   m_Layer: 5
   m_Name: Lessons
   m_TagString: Untagged
@@ -9080,6 +9419,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2061610872}
+--- !u!65 &2061610877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061610872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 175, y: 100, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2082019756
 GameObject:
   m_ObjectHideFlags: 0
@@ -9165,6 +9516,7 @@ GameObject:
   - component: {fileID: 2086718311}
   - component: {fileID: 2086718310}
   - component: {fileID: 2086718309}
+  - component: {fileID: 2086718312}
   m_Layer: 5
   m_Name: LogOut
   m_TagString: Untagged
@@ -9298,6 +9650,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2086718307}
+--- !u!65 &2086718312
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086718307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 175, y: 100, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2094853879
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,6 +9761,7 @@ GameObject:
   - component: {fileID: 2101149679}
   - component: {fileID: 2101149678}
   - component: {fileID: 2101149681}
+  - component: {fileID: 2101149682}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -9521,6 +9886,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelToLoad: 1_CPUinstallation
   PlayerData: {fileID: 0}
+--- !u!65 &2101149682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101149676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2104664409
 GameObject:
   m_ObjectHideFlags: 0
@@ -9533,6 +9910,7 @@ GameObject:
   - component: {fileID: 2104664413}
   - component: {fileID: 2104664412}
   - component: {fileID: 2104664411}
+  - component: {fileID: 2104664415}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -9657,6 +10035,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2104664409}
+--- !u!65 &2104664415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2104664409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 82, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2113520781
 Prefab:
   m_ObjectHideFlags: 0

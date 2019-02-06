@@ -1509,6 +1509,7 @@ GameObject:
   - component: {fileID: 234560949}
   - component: {fileID: 234560948}
   - component: {fileID: 234560947}
+  - component: {fileID: 234560950}
   m_Layer: 5
   m_Name: rotate
   m_TagString: Untagged
@@ -1620,6 +1621,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 234560945}
+--- !u!65 &234560950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 234560945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 110, y: 50, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &242578743
 GameObject:
   m_ObjectHideFlags: 0
@@ -10234,6 +10247,7 @@ GameObject:
   - component: {fileID: 1902849502}
   - component: {fileID: 1902849501}
   - component: {fileID: 1902849500}
+  - component: {fileID: 1902849503}
   m_Layer: 5
   m_Name: insert
   m_TagString: Untagged
@@ -10345,6 +10359,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1902849498}
+--- !u!65 &1902849503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902849498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 110, y: 50, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1923669883
 GameObject:
   m_ObjectHideFlags: 0

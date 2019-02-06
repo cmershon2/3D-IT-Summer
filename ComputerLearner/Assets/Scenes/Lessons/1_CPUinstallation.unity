@@ -1703,7 +1703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac94212daadbc84e9c80b5dffb001a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 3
+  distance: 2.5
   hold: 0
   Redicle: {fileID: 283070638}
 --- !u!114 &381882707

@@ -18,6 +18,7 @@ public class Login : MonoBehaviour {
 
     public GameObject LoadingIcon;
     public GameObject LoginBtn;
+    public GameObject CreateBtn;
 
     string LoginURL = "it3d.science/UnityLogin.php";
 
@@ -241,6 +242,7 @@ public class Login : MonoBehaviour {
     {
         StartCoroutine(LoginToDB(UsernameUI.text, PasswordUI.text));
         LoginBtn.SetActive(false);
+        CreateBtn.SetActive(false);
         LoadingIcon.SetActive(true);
     }
 #endregion
