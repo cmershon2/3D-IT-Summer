@@ -17,8 +17,19 @@ labels:
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: meshU3D_id
-  externalObjects: {}
+    4300002: meshU3D
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic
+    second: {fileID: 2100000, guid: a6c81be8978b20d4b918aab7ec76a970, type: 2}
   materials:
     importMaterials: 1
     materialName: 3
