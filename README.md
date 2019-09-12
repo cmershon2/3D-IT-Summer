@@ -1,5 +1,4 @@
-# OUT WITH THE OLD?
-# Virtual Reality Curriculum
+# OUT WITH THE OLD? Virtual Reality Curriculum
 ## *Can 3D virtual reality labratories replace traditional labratory learning?*
 
 ### Purpose
